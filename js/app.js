@@ -138,6 +138,7 @@ const init = () => {
   tie = false;
   console.log('init called');
   render();
+  checkForTie();
 };
 
 /*----------------------------- Event Listeners -----------------------------*/
