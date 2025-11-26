@@ -21,7 +21,7 @@ let tie;         // stores tie state
 // Find me the first element in the DOM that has the ID message
 const messageEl = document.querySelector('#message');
 
-// Stores all 9 square elements in a list
+// Stores all 9 square elements in a node list
 const squareEls = document.querySelectorAll('.sqr');
 
 // Cached reference to the board container (only runs once). Stores the main container of the board
@@ -110,9 +110,8 @@ const checkForWinner = () => {
         board[first] === board[second] &&
         board[first] === board[third]
     ) {
-       if(winner = true) {
+       winner = true;
         messageEl.textContent = `${playerTurn} wins!`;
-       }
         return;
     }
 }
