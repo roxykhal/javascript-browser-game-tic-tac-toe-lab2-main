@@ -145,5 +145,4 @@ const init = () => {
 boardEl.addEventListener('click', handleClick);
 resetBtnEl.addEventListener('click', init)
 /*----------------------------- Initialize -----------------------------*/
-init();
- 
+checkForTie(); 
